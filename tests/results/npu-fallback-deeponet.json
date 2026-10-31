@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "failed": 0,
+  "passed": 1,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "requested_backend": "npu",
+  "results": [
+    {
+      "artifacts": [
+        "06_deeponet_wave.png"
+      ],
+      "device": {
+        "details": {
+          "probe_loss": 0.6995781660079956,
+          "torch": "2.10.0+cpu"
+        },
+        "device": "cpu",
+        "fallback": true,
+        "fallback_reason": "npu: ModuleNotFoundError: No module named 'torch_npu'",
+        "requested": "npu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 5.276,
+      "lab": "06_deeponet_wave",
+      "metrics": {
+        "best_validation_relative_l2": 0.03064037300646305,
+        "id_relative_l2": 0.02829589508473873,
+        "ood_relative_l2": 0.5953349471092224
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "/mnt/data/work_revision/acoustic-ai-labs/labs/06_deeponet_wave.py:21: RuntimeWarning: Accelerator unavailable; using CPU. npu: ModuleNotFoundError: No module named 'torch_npu'\n  selected = select_device()\n",
+      "stdout_tail": "Device: requested=npu, selected=cpu, fallback_reason=npu: ModuleNotFoundError: No module named 'torch_npu'\nEpoch 000: relative L2=0.3192\nEpoch 020: relative L2=0.0452\nEpoch 040: relative L2=0.0306\nEpoch 060: relative L2=0.0399\nEpoch 080: relative L2=0.0353\nEpoch 100: relative L2=0.0418\nEpoch 120: relative L2=0.0461\nEpoch 140: relative L2=0.0420\nEpoch 160: relative L2=0.0523\nEpoch 180: relative L2=0.0383\nEpoch 200: relative L2=0.0623\nEpoch 220: relative L2=0.0375\nEpoch 240: relative L2=0.0552\nEpoch 260: relative L2=0.0448\nEpoch 280: relative L2=0.0623\nEpoch 300: relative L2=0.0623\nID test relative L2=0.0283; OOD relative L2=0.5953\nRESULT {\"device\": \"cpu\", \"lab\": \"06_deeponet_wave\", \"metrics\": {\"best_validation_relative_l2\": 0.03064037300646305, \"id_relative_l2\": 0.02829589508473873, \"ood_relative_l2\": 0.5953349471092224}}\n"
+    }
+  ],
+  "selected_labs": [
+    "06_deeponet_wave"
+  ],
+  "strict_device": false,
+  "timestamp_utc": "2026-10-31T09:52:34.642712+00:00"
+}

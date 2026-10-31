@@ -1,0 +1,46 @@
+test_attention_softmax_normalization (test_acoustic_properties.AcousticPropertyTests.test_attention_softmax_normalization) ... ok
+test_cosine_aliasing_at_eight_khz (test_acoustic_properties.AcousticPropertyTests.test_cosine_aliasing_at_eight_khz) ... ok
+test_fft_frequency_spacing (test_acoustic_properties.AcousticPropertyTests.test_fft_frequency_spacing) ... ok
+test_wave_analytic_solution_obeys_boundary_conditions (test_acoustic_properties.AcousticPropertyTests.test_wave_analytic_solution_obeys_boundary_conditions) ... ok
+test_mocked_npu_backend (test_backends.BackendTests.test_mocked_npu_backend) ... ok
+test_mocked_npu_without_available_hardware_fails (test_backends.BackendTests.test_mocked_npu_without_available_hardware_fails) ... ok
+test_npu_missing_extension_is_reported (test_backends.BackendTests.test_npu_missing_extension_is_reported) ... ok
+test_real_cpu_preflight (test_backends.BackendTests.test_real_cpu_preflight) ... ok
+test_real_gpu_preflight_reports_cuda_absence (test_backends.BackendTests.test_real_gpu_preflight_reports_cuda_absence) ... ok
+test_accelerator_and_cpu_both_fail (test_device.DeviceSelectionTests.test_accelerator_and_cpu_both_fail) ... ok
+test_auto_next_prefers_npu (test_device.DeviceSelectionTests.test_auto_next_prefers_npu) ... ok
+test_auto_prefers_gpu (test_device.DeviceSelectionTests.test_auto_prefers_gpu) ... ok
+test_auto_then_cpu (test_device.DeviceSelectionTests.test_auto_then_cpu) ... ok
+test_cpu_preflight_failure_not_masked (test_device.DeviceSelectionTests.test_cpu_preflight_failure_not_masked) ... ok
+test_cpu_selection (test_device.DeviceSelectionTests.test_cpu_selection) ... ok
+test_cuda_falls_back_to_cpu (test_device.DeviceSelectionTests.test_cuda_falls_back_to_cpu) ... ok
+test_cuda_selection_when_available (test_device.DeviceSelectionTests.test_cuda_selection_when_available) ... ok
+test_env_backend (test_device.DeviceSelectionTests.test_env_backend) ... ok
+test_env_strict (test_device.DeviceSelectionTests.test_env_strict) ... ok
+test_invalid_backend_rejected (test_device.DeviceSelectionTests.test_invalid_backend_rejected) ... ok
+test_metadata_contains_safe_fields (test_device.DeviceSelectionTests.test_metadata_contains_safe_fields) ... ok
+test_npu_falls_back_to_cpu (test_device.DeviceSelectionTests.test_npu_falls_back_to_cpu) ... ok
+test_npu_selection_when_available (test_device.DeviceSelectionTests.test_npu_selection_when_available) ... ok
+test_strict_auto_rejected (test_device.DeviceSelectionTests.test_strict_auto_rejected) ... ok
+test_strict_gpu_refuses_fallback (test_device.DeviceSelectionTests.test_strict_gpu_refuses_fallback) ... ok
+test_strict_npu_refuses_fallback (test_device.DeviceSelectionTests.test_strict_npu_refuses_fallback) ... ok
+test_cpu_preflight_report_is_real_and_machine_readable (test_repository_contract.RepositoryContractTests.test_cpu_preflight_report_is_real_and_machine_readable) ... ok
+test_missing_explicit_cann_script_fails_early (test_repository_contract.RepositoryContractTests.test_missing_explicit_cann_script_fails_early) ... ok
+test_student_repository_has_no_instructor_notes (test_repository_contract.RepositoryContractTests.test_student_repository_has_no_instructor_notes) ... ok
+test_fast_lab_selection_contains_no_training (test_validation.CliTests.test_fast_lab_selection_contains_no_training) ... ok
+test_fixed_backend_cannot_be_overridden (test_validation.CliTests.test_fixed_backend_cannot_be_overridden) ... ok
+test_metrics_reject_bad_alias (test_validation.ValidationTests.test_metrics_reject_bad_alias) ... ok
+test_metrics_reject_bad_cnn_accuracy (test_validation.ValidationTests.test_metrics_reject_bad_cnn_accuracy) ... ok
+test_metrics_reject_bad_deeponet_error (test_validation.ValidationTests.test_metrics_reject_bad_deeponet_error) ... ok
+test_metrics_reject_bad_fdtd_convergence (test_validation.ValidationTests.test_metrics_reject_bad_fdtd_convergence) ... ok
+test_metrics_reject_bad_transformer_accuracy (test_validation.ValidationTests.test_metrics_reject_bad_transformer_accuracy) ... ok
+test_metrics_reject_nonfinite (test_validation.ValidationTests.test_metrics_reject_nonfinite) ... ok
+test_metrics_reject_nonimproving_denoiser (test_validation.ValidationTests.test_metrics_reject_nonimproving_denoiser) ... ok
+test_no_stale_or_empty_artifacts_accepted (test_validation.ValidationTests.test_no_stale_or_empty_artifacts_accepted) ... ok
+test_six_labs_without_notebooks (test_validation.ValidationTests.test_six_labs_without_notebooks) ... ok
+test_wav_metadata_checked (test_validation.ValidationTests.test_wav_metadata_checked) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 6.572s
+
+OK

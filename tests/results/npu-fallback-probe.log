@@ -1,0 +1,14 @@
+/mnt/data/work_revision/acoustic-ai-labs/verify.py:133: RuntimeWarning: Accelerator unavailable; using CPU. npu: ModuleNotFoundError: No module named 'torch_npu'
+  chosen = select_device(args.backend, args.strict_device)
+{
+  "status": "pass",
+  "requested": "npu",
+  "selected": "cpu",
+  "device": "cpu",
+  "fallback": true,
+  "fallback_reason": "npu: ModuleNotFoundError: No module named 'torch_npu'",
+  "details": {
+    "torch": "2.10.0+cpu",
+    "probe_loss": 0.7512825131416321
+  }
+}

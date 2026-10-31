@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "requested": "cpu",
+  "selected": "cpu",
+  "device": "cpu",
+  "fallback": false,
+  "fallback_reason": null,
+  "details": {
+    "torch": "2.10.0+cpu",
+    "probe_loss": 0.7205386161804199
+  }
+}

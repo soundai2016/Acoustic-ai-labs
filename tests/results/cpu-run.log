@@ -1,0 +1,7 @@
+PASS 01_signals_spectra: {'alias_max_error': 9.554968548150344e-14, 'fft_spacing_hz': 0.5, 'mel_bands': 32}
+PASS 02_room_denoise: {'snr_after_db': 7.809251028102525, 'snr_before_db': -0.42573811374405435, 'snr_gain_db': 8.23498914184658}
+PASS 03_cnn_classification: {'shifted_accuracy': 0.9555555582046509, 'test_count': 90, 'train_final_loss': 0.044655704172328115}
+PASS 04_transformer_attention: {'attention_row_sum': 1.0, 'test_accuracy': 1.0, 'validation_best_accuracy': 1.0}
+PASS 05_wave_fdtd: {'coarse_relative_error': 0.0018191244393424664, 'convergence_ratio': 64.08150314976157, 'fine_relative_error': 2.8387668046598164e-05, 'unstable_max_amplitude': 367935.1200456147}
+PASS 06_deeponet_wave: {'best_validation_relative_l2': 0.03064037300646305, 'id_relative_l2': 0.02829589508473873, 'ood_relative_l2': 0.5953349471092224}
+Report: tests/results/cpu-full.json

@@ -1,0 +1,2 @@
+PASS 06_deeponet_wave: {'best_validation_relative_l2': 0.03064037300646305, 'id_relative_l2': 0.02829589508473873, 'ood_relative_l2': 0.5953349471092224}
+Report: tests/results/npu-fallback-deeponet.json

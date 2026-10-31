@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these acoustic AI teaching labs, please cite this software."
+title: "Acoustic Physics and Auditory Intelligence Labs"
+type: software
+authors:
+  - family-names: Chen
+    given-names: Xiaoliang
+    affiliation: SoundAI Technology
+    email: chenxiaoliang@soundai.com
+license: MIT
+abstract: "Six reproducible Python teaching labs with CPU, NVIDIA CUDA, and Ascend TorchNPU backends."

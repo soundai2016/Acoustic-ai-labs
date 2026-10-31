@@ -1,0 +1,183 @@
+{
+  "complete": true,
+  "failed": 0,
+  "passed": 6,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "requested_backend": "cpu",
+  "results": [
+    {
+      "artifacts": [
+        "01_signals_spectra.png",
+        "01_synthetic_audio.wav"
+      ],
+      "device": {
+        "details": {
+          "scope": "NumPy/SciPy CPU computation"
+        },
+        "device": "cpu",
+        "fallback": false,
+        "fallback_reason": null,
+        "requested": "cpu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 2.157,
+      "lab": "01_signals_spectra",
+      "metrics": {
+        "alias_max_error": 9.554968548150344e-14,
+        "fft_spacing_hz": 0.5,
+        "mel_bands": 32
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "FFT spacing: 0.50 Hz; alias error: 9.55e-14\nRESULT {\"device\": \"cpu\", \"lab\": \"01_signals_spectra\", \"metrics\": {\"alias_max_error\": 9.554968548150344e-14, \"fft_spacing_hz\": 0.5, \"mel_bands\": 32}}\n"
+    },
+    {
+      "artifacts": [
+        "02_room_denoise.png",
+        "02_noisy.wav",
+        "02_denoised.wav"
+      ],
+      "device": {
+        "details": {
+          "scope": "NumPy/SciPy CPU computation"
+        },
+        "device": "cpu",
+        "fallback": false,
+        "fallback_reason": null,
+        "requested": "cpu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 2.008,
+      "lab": "02_room_denoise",
+      "metrics": {
+        "snr_after_db": 7.809251028102525,
+        "snr_before_db": -0.42573811374405435,
+        "snr_gain_db": 8.23498914184658
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "SNR: -0.43 \u2192 7.81 dB; \u0394=+8.23 dB\nRESULT {\"device\": \"cpu\", \"lab\": \"02_room_denoise\", \"metrics\": {\"snr_after_db\": 7.809251028102525, \"snr_before_db\": -0.42573811374405435, \"snr_gain_db\": 8.23498914184658}}\n"
+    },
+    {
+      "artifacts": [
+        "03_cnn_training.png"
+      ],
+      "device": {
+        "details": {
+          "probe_loss": 0.7570605278015137,
+          "torch": "2.10.0+cpu"
+        },
+        "device": "cpu",
+        "fallback": false,
+        "fallback_reason": null,
+        "requested": "cpu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 6.495,
+      "lab": "03_cnn_classification",
+      "metrics": {
+        "shifted_accuracy": 0.9555555582046509,
+        "test_count": 90,
+        "train_final_loss": 0.044655704172328115
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "Device: requested=cpu, selected=cpu, fallback_reason=None\nEpoch 01: train loss=0.9785\nEpoch 02: train loss=0.6464\nEpoch 03: train loss=0.3072\nEpoch 04: train loss=0.1755\nEpoch 05: train loss=0.1527\nEpoch 06: train loss=0.0809\nEpoch 07: train loss=0.0851\nEpoch 08: train loss=0.0613\nEpoch 09: train loss=0.0661\nEpoch 10: train loss=0.0447\nShifted-condition test accuracy: 0.956\nRESULT {\"device\": \"cpu\", \"lab\": \"03_cnn_classification\", \"metrics\": {\"shifted_accuracy\": 0.9555555582046509, \"test_count\": 90, \"train_final_loss\": 0.044655704172328115}}\n"
+    },
+    {
+      "artifacts": [
+        "04_attention_transformer.png"
+      ],
+      "device": {
+        "details": {
+          "probe_loss": 0.6971762180328369,
+          "torch": "2.10.0+cpu"
+        },
+        "device": "cpu",
+        "fallback": false,
+        "fallback_reason": null,
+        "requested": "cpu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 3.709,
+      "lab": "04_transformer_attention",
+      "metrics": {
+        "attention_row_sum": 1.0,
+        "test_accuracy": 1.0,
+        "validation_best_accuracy": 1.0
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "Device: requested=cpu, selected=cpu, fallback_reason=None\nEpoch 01: validation accuracy=0.562\nEpoch 02: validation accuracy=0.587\nEpoch 03: validation accuracy=1.000\nEpoch 04: validation accuracy=1.000\nEpoch 05: validation accuracy=1.000\nEpoch 06: validation accuracy=1.000\nEpoch 07: validation accuracy=1.000\nEpoch 08: validation accuracy=1.000\nEpoch 09: validation accuracy=1.000\nEpoch 10: validation accuracy=1.000\nEpoch 11: validation accuracy=1.000\nEpoch 12: validation accuracy=1.000\nEpoch 13: validation accuracy=1.000\nEpoch 14: validation accuracy=1.000\nAttention row-sum: 1.000; test accuracy: 1.000\nRESULT {\"device\": \"cpu\", \"lab\": \"04_transformer_attention\", \"metrics\": {\"attention_row_sum\": 1.0, \"test_accuracy\": 1.0, \"validation_best_accuracy\": 1.0}}\n"
+    },
+    {
+      "artifacts": [
+        "05_wave_fdtd.png"
+      ],
+      "device": {
+        "details": {
+          "scope": "NumPy/SciPy CPU computation"
+        },
+        "device": "cpu",
+        "fallback": false,
+        "fallback_reason": null,
+        "requested": "cpu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 1.735,
+      "lab": "05_wave_fdtd",
+      "metrics": {
+        "coarse_relative_error": 0.0018191244393424664,
+        "convergence_ratio": 64.08150314976157,
+        "fine_relative_error": 2.8387668046598164e-05,
+        "unstable_max_amplitude": 367935.1200456147
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "Relative errors: {20: 0.0018191, 40: 0.0004543, 80: 0.0001136, 160: 2.84e-05}\nRESULT {\"device\": \"cpu\", \"lab\": \"05_wave_fdtd\", \"metrics\": {\"coarse_relative_error\": 0.0018191244393424664, \"convergence_ratio\": 64.08150314976157, \"fine_relative_error\": 2.8387668046598164e-05, \"unstable_max_amplitude\": 367935.1200456147}}\n"
+    },
+    {
+      "artifacts": [
+        "06_deeponet_wave.png"
+      ],
+      "device": {
+        "details": {
+          "probe_loss": 0.7071918845176697,
+          "torch": "2.10.0+cpu"
+        },
+        "device": "cpu",
+        "fallback": false,
+        "fallback_reason": null,
+        "requested": "cpu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 5.2,
+      "lab": "06_deeponet_wave",
+      "metrics": {
+        "best_validation_relative_l2": 0.03064037300646305,
+        "id_relative_l2": 0.02829589508473873,
+        "ood_relative_l2": 0.5953349471092224
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "",
+      "stdout_tail": "Device: requested=cpu, selected=cpu, fallback_reason=None\nEpoch 000: relative L2=0.3192\nEpoch 020: relative L2=0.0452\nEpoch 040: relative L2=0.0306\nEpoch 060: relative L2=0.0399\nEpoch 080: relative L2=0.0353\nEpoch 100: relative L2=0.0418\nEpoch 120: relative L2=0.0461\nEpoch 140: relative L2=0.0420\nEpoch 160: relative L2=0.0523\nEpoch 180: relative L2=0.0383\nEpoch 200: relative L2=0.0623\nEpoch 220: relative L2=0.0375\nEpoch 240: relative L2=0.0552\nEpoch 260: relative L2=0.0448\nEpoch 280: relative L2=0.0623\nEpoch 300: relative L2=0.0623\nID test relative L2=0.0283; OOD relative L2=0.5953\nRESULT {\"device\": \"cpu\", \"lab\": \"06_deeponet_wave\", \"metrics\": {\"best_validation_relative_l2\": 0.03064037300646305, \"id_relative_l2\": 0.02829589508473873, \"ood_relative_l2\": 0.5953349471092224}}\n"
+    }
+  ],
+  "selected_labs": [
+    "01_signals_spectra",
+    "02_room_denoise",
+    "03_cnn_classification",
+    "04_transformer_attention",
+    "05_wave_fdtd",
+    "06_deeponet_wave"
+  ],
+  "strict_device": false,
+  "timestamp_utc": "2026-10-31T09:51:13.502175+00:00"
+}

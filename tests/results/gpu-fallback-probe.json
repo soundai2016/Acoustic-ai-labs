@@ -1,0 +1,12 @@
+{
+  "details": {
+    "probe_loss": 0.7559387683868408,
+    "torch": "2.10.0+cpu"
+  },
+  "device": "cpu",
+  "fallback": true,
+  "fallback_reason": "gpu: RuntimeError: CUDA is not available",
+  "requested": "gpu",
+  "selected": "cpu",
+  "status": "pass"
+}

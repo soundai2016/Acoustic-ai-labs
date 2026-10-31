@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-31",
+  "runner": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "unit_tests": {
+    "passed": 41,
+    "failed": 0
+  },
+  "cpu_experiments": {
+    "passed": 6,
+    "failed": 0,
+    "selected_device": "cpu"
+  },
+  "gpu_fallback": {
+    "passed": 3,
+    "selected_device": "cpu",
+    "labs": [
+      "03_cnn_classification",
+      "04_transformer_attention",
+      "06_deeponet_wave"
+    ]
+  },
+  "npu_fallback": {
+    "passed": 3,
+    "selected_device": "cpu",
+    "labs": [
+      "03_cnn_classification",
+      "04_transformer_attention",
+      "06_deeponet_wave"
+    ]
+  },
+  "strict_accelerator_probes": {
+    "gpu": "expected failure: CUDA absent",
+    "npu": "expected failure: torch_npu absent"
+  },
+  "real_accelerator_tests": "Owner reported CUDA and Ascend 910C runs; machine-generated reports not provided"
+}

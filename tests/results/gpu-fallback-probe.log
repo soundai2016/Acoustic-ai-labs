@@ -1,0 +1,14 @@
+/mnt/data/work_revision/acoustic-ai-labs/verify.py:133: RuntimeWarning: Accelerator unavailable; using CPU. gpu: RuntimeError: CUDA is not available
+  chosen = select_device(args.backend, args.strict_device)
+{
+  "status": "pass",
+  "requested": "gpu",
+  "selected": "cpu",
+  "device": "cpu",
+  "fallback": true,
+  "fallback_reason": "gpu: RuntimeError: CUDA is not available",
+  "details": {
+    "torch": "2.10.0+cpu",
+    "probe_loss": 0.7559387683868408
+  }
+}

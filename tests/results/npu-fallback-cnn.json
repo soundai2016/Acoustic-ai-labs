@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "failed": 0,
+  "passed": 1,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "requested_backend": "npu",
+  "results": [
+    {
+      "artifacts": [
+        "03_cnn_training.png"
+      ],
+      "device": {
+        "details": {
+          "probe_loss": 0.6943750381469727,
+          "torch": "2.10.0+cpu"
+        },
+        "device": "cpu",
+        "fallback": true,
+        "fallback_reason": "npu: ModuleNotFoundError: No module named 'torch_npu'",
+        "requested": "npu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 6.177,
+      "lab": "03_cnn_classification",
+      "metrics": {
+        "shifted_accuracy": 0.9555555582046509,
+        "test_count": 90,
+        "train_final_loss": 0.044655704172328115
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "/mnt/data/work_revision/acoustic-ai-labs/labs/03_cnn_classification.py:23: RuntimeWarning: Accelerator unavailable; using CPU. npu: ModuleNotFoundError: No module named 'torch_npu'\n  selected = select_device()\n",
+      "stdout_tail": "Device: requested=npu, selected=cpu, fallback_reason=npu: ModuleNotFoundError: No module named 'torch_npu'\nEpoch 01: train loss=0.9785\nEpoch 02: train loss=0.6464\nEpoch 03: train loss=0.3072\nEpoch 04: train loss=0.1755\nEpoch 05: train loss=0.1527\nEpoch 06: train loss=0.0809\nEpoch 07: train loss=0.0851\nEpoch 08: train loss=0.0613\nEpoch 09: train loss=0.0661\nEpoch 10: train loss=0.0447\nShifted-condition test accuracy: 0.956\nRESULT {\"device\": \"cpu\", \"lab\": \"03_cnn_classification\", \"metrics\": {\"shifted_accuracy\": 0.9555555582046509, \"test_count\": 90, \"train_final_loss\": 0.044655704172328115}}\n"
+    }
+  ],
+  "selected_labs": [
+    "03_cnn_classification"
+  ],
+  "strict_device": false,
+  "timestamp_utc": "2026-10-31T09:52:12.011431+00:00"
+}

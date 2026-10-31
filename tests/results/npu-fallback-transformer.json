@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "failed": 0,
+  "passed": 1,
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "requested_backend": "npu",
+  "results": [
+    {
+      "artifacts": [
+        "04_attention_transformer.png"
+      ],
+      "device": {
+        "details": {
+          "probe_loss": 0.695947527885437,
+          "torch": "2.10.0+cpu"
+        },
+        "device": "cpu",
+        "fallback": true,
+        "fallback_reason": "npu: ModuleNotFoundError: No module named 'torch_npu'",
+        "requested": "npu",
+        "selected": "cpu"
+      },
+      "elapsed_s": 3.836,
+      "lab": "04_transformer_attention",
+      "metrics": {
+        "attention_row_sum": 1.0,
+        "test_accuracy": 1.0,
+        "validation_best_accuracy": 1.0
+      },
+      "return_code": 0,
+      "status": "pass",
+      "stderr_tail": "/mnt/data/work_revision/acoustic-ai-labs/labs/04_transformer_attention.py:21: RuntimeWarning: Accelerator unavailable; using CPU. npu: ModuleNotFoundError: No module named 'torch_npu'\n  selected = select_device()\n",
+      "stdout_tail": "Device: requested=npu, selected=cpu, fallback_reason=npu: ModuleNotFoundError: No module named 'torch_npu'\nEpoch 01: validation accuracy=0.562\nEpoch 02: validation accuracy=0.587\nEpoch 03: validation accuracy=1.000\nEpoch 04: validation accuracy=1.000\nEpoch 05: validation accuracy=1.000\nEpoch 06: validation accuracy=1.000\nEpoch 07: validation accuracy=1.000\nEpoch 08: validation accuracy=1.000\nEpoch 09: validation accuracy=1.000\nEpoch 10: validation accuracy=1.000\nEpoch 11: validation accuracy=1.000\nEpoch 12: validation accuracy=1.000\nEpoch 13: validation accuracy=1.000\nEpoch 14: validation accuracy=1.000\nAttention row-sum: 1.000; test accuracy: 1.000\nRESULT {\"device\": \"cpu\", \"lab\": \"04_transformer_attention\", \"metrics\": {\"attention_row_sum\": 1.0, \"test_accuracy\": 1.0, \"validation_best_accuracy\": 1.0}}\n"
+    }
+  ],
+  "selected_labs": [
+    "04_transformer_attention"
+  ],
+  "strict_device": false,
+  "timestamp_utc": "2026-10-31T09:52:16.522775+00:00"
+}

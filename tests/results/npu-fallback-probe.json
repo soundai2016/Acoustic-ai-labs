@@ -1,0 +1,12 @@
+{
+  "details": {
+    "probe_loss": 0.7512825131416321,
+    "torch": "2.10.0+cpu"
+  },
+  "device": "cpu",
+  "fallback": true,
+  "fallback_reason": "npu: ModuleNotFoundError: No module named 'torch_npu'",
+  "requested": "npu",
+  "selected": "cpu",
+  "status": "pass"
+}

@@ -1,0 +1,6 @@
+{
+  "error": "Strict device preflight failed: gpu: RuntimeError: CUDA is not available",
+  "requested": "gpu",
+  "status": "fail",
+  "strict_device": true
+}

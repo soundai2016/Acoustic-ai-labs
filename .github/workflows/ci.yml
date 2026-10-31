@@ -1,0 +1,38 @@
+name: CPU validation
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install numerical dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Install CPU PyTorch
+        run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Compile source
+        run: python -m compileall -q acoustic_labs cpu gpu npu labs tests verify.py
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Full CPU integration
+        run: python cpu/run.py --all --report outputs/ci-cpu-full.json
+      - name: GPU and NPU fallback probes
+        run: |
+          python gpu/run.py --probe --report outputs/ci-gpu-fallback.json
+          python npu/run.py --probe --report outputs/ci-npu-fallback.json
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpu-validation-py${{ matrix.python-version }}
+          path: outputs/*.json
+          if-no-files-found: ignore

@@ -1,0 +1,6 @@
+{
+  "status": "fail",
+  "requested": "npu",
+  "strict_device": true,
+  "error": "Strict device preflight failed: npu: ModuleNotFoundError: No module named 'torch_npu'"
+}

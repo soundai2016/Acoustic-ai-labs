@@ -1,0 +1,2 @@
+PASS 04_transformer_attention: {'attention_row_sum': 1.0, 'test_accuracy': 1.0, 'validation_best_accuracy': 1.0}
+Report: tests/results/gpu-fallback-transformer.json
